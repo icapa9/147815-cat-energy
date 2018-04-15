@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html"></a>
+        <nav class="main-nav">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="index.html">главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="catalog.html">каталог продукции</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="form.html">подбор программ</a>
+            </li>
+          </ul>
+          <button type="button" name="button">открыть меню</button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main-form">
+        <form class="site-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="site-form__item">
+            <div class="site-form__wrapper">
+              <div class="site-form__caption">
+                <h1>подбор программы</h1>
+                <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+              </div>
+              <div class="site-form__bio">
+                <fieldset>
+                  <label for="name">Имя:<sup>*</sup></label>
+                  <input type="text" name="name" value="" id="name">
+                  <label for="weight">Вес (кг):<sup>*</sup></label>
+                  <input type="text" name="weight" value="" id="weight">
+                  <label for="age">Возраст (лет):</label>
+                  <input type="text" name="age" value="" id="age">
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <div class="site-form__item">
+            <div class="site-form__wrapper">
+              <div class="site-form__options">
+                <fieldset>
+                  <input type="radio" name="weight-options" value="weigth-down" id="weigth-down" checked>
+                  <label for="weigth-down">похудение</label>
+                  <input type="radio" name="weight-options" value="weigth-up" id="weigth-up">
+                  <label for="weigth-up">набор массы</label>
+                  <input type="radio" name="weight-options" value="weight-advice" id="weight-advice">
+                  <label for="weight-advice">не знаю (нужен ваш совет)</label>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <div class="site-form__item">
+            <fieldset>
+              <legend>Контактные данные (владельца кота)</legend>
+              <div class="site-form__wrapper">
+                <label for="email">e-mail:<sup>*</sup></label>
+                <input type="email" name="" value="" id="email">
+                <label for="tel">Телефон:<sup>*</sup></label>
+                <input type="tel" name="" value="" id="tel">
+              </div>
+            </fieldset>
+          </div>
+          <div class="site-form__item">
+            <fieldset>
+              <legend>Комментарии</legend>
+              <div class="site-form__wrapper">
+                <textarea name="name" rows="8" cols="80"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          <div class="site-form__item">
+            <fieldset>
+              <legend>Дополнительно</legend>
+              <div class="site-form__wrapper">
+                <input type="checkbox" name="sweetener" value="ok" id="sweetener" checked>
+                <label for="sweetener">сахарозаменитель</label>
+                <input type="checkbox" name="water" value="ok" id="water">
+                <label for="water">питьевая вода</label>
+                <input type="checkbox" name="milk" value="ok" id="milk">
+                <label for="milk">молоко</label>
+                <input type="checkbox" name="vitamins" value="ok" id="vitamins">
+                <label for="vitamins">витамины</label>
+              </div>
+            </fieldset>
+          </div>
+          <button class="button" type="submit">отправить заявку</button>
+          <span><sup>*</sup>— Обязательные поля</span>
+        </form>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+          <b>приглашаем к сотрудничеству дилеров!</b>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map">
+          <img src="http://placehold.it/150x100">
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="footer-logo">
+            <a href="#"><img src="http://placehold.it/150x100"></a>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="#">Мы в контакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">Мы в инстаграме</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+              </li>
+            </ul>
+          </div>
+          <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
