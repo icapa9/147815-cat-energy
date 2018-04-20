@@ -1,24 +1,19 @@
 .main-title {
   margin-bottom: 22px;
   padding-top: 29px;
-  background-color: #65a93c;
+  background-color: #63a73a;
   background-image:
     url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 
-  font-family: "Oswald", "Arial";
-  font-weight: 400;
-
   h1 {
-    line-height: 36px;
-    font-size: 36px;
-    color: #ffffff;
+    .page-title(36px, 36px);
+
+    color: @main-title-color;
   }
 
   p {
-    line-height: 14px;
-    font-size: 14px;
-    color: #ffffff;
+    color: @main-title-color;
     text-transform: uppercase;
   }
 }
