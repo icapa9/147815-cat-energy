@@ -1,0 +1,38 @@
+.adv-list {
+  outline: 2px solid blue;
+  .list-reset();
+}
+
+.adv-list__item {
+  outline: 2px solid purple;
+}
+
+@media (min-width: @tablet-width) {
+  .adv-list__item {
+    width: 324px;
+    min-height: 228px;
+    margin: 0;
+    margin-bottom: 84px;
+
+    &:nth-child(odd) {
+      margin-right: 60px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .adv-list__item {
+    width: 245px;
+
+    &:nth-child(odd) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(even) {
+      margin-right: 80px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

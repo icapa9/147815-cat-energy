@@ -1,5 +1,6 @@
 .examples {
   background-color: @secondary-background-color;
+  outline: 2px solid red;
 
   h2 {
     .page-title();
@@ -22,4 +23,51 @@
     color: @title-color;
     text-transform: uppercase;
   }
+}
+
+.examples__wrapper {
+  .container();
+}
+
+@media (min-width: @tablet-width) {
+  .examples {
+    background-color: @main-background-color;
+    background-image: linear-gradient(to top, #f2f2f2 50%, #ffffff 50%);
+  }
+
+  .examples__inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 82px;
+  }
+
+  .examples__costs {
+    outline: 2px solid purple;
+  }
+
+  .examples__img {
+    width: 708px;
+    outline: 2px solid purple;
+    flex-shrink: 0;
+  }
+}
+
+  @media (min-width: @desktop-width) {
+    .examples {
+      background-image: linear-gradient(to top, #f2f2f2 70%, #ffffff 30%);
+    }
+
+    .examples__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .examples__inner-wrapper {
+      flex-direction: column;
+      width: 440px;
+    }
+    .examples__img {
+      width: 610px;
+    }
 }

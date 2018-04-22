@@ -8,7 +8,7 @@
   <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo"></a>
+        <a class="page-header__logo">Logo</a>
         <nav class="main-nav">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item">
@@ -21,7 +21,7 @@
               <a class="nav-list__link" href="form.html">подбор программ</a>
             </li>
           </ul>
-          <button type="button" name="button">открыть меню</button>
+          <button type="button main-nav__button" name="button">открыть меню</button>
         </nav>
       </div>
     </header>
@@ -70,19 +70,21 @@
       </section>
       <section class="examples">
         <div class="examples__wrapper">
-          <h2>Живой пример</h2>
-          <p class="examples__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <table class="examples__table table-achiev">
-            <tr class="table-achiev__item">
-              <td class="table-achiev__value">5 кг</td>
-              <td class="table-achiev__value">60 дней</td>
-            </tr>
-            <tr class="table-achiev__item">
-              <td class="table-achiev__description">снижение веса</td>
-              <td class="table-achiev__description">затрачено времени</td>
-            </tr>
-          </table>
-          <p class="examples__costs">Затраты на питание: 15 000 руб.</p>
+          <div class="examples__inner-wrapper">
+            <h2>Живой пример</h2>
+            <p class="examples__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <table class="examples__table table-achiev">
+              <tr class="table-achiev__item">
+                <td class="table-achiev__value">5 кг</td>
+                <td class="table-achiev__value">60 дней</td>
+              </tr>
+              <tr class="table-achiev__item">
+                <td class="table-achiev__description">снижение веса</td>
+                <td class="table-achiev__description">затрачено времени</td>
+              </tr>
+            </table>
+            <p class="examples__costs">Затраты на питание: 15 000 руб.</p>
+          </div>
           <div class="examples__img">
             <img src="http://placehold.it/150x100">
             <span>было</span>
@@ -103,7 +105,7 @@
       </section>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <a class="page-footer__logo"></a>
+          <a class="page-footer__logo">Logo</a>
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">

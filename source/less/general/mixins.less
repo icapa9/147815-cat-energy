@@ -23,3 +23,32 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.list-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.container() {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  outline: 2px solid green;
+
+  @media (min-width: @mobile-width) {
+    width: @screen-s-min;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: @screen-m-min;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @screen-l-min;
+    padding: 0 110px;
+  }
+}
