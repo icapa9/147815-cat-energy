@@ -1,3 +1,7 @@
+.site-form__wrapper {
+  .container();
+}
+
 .site-form__item {
 
   legend {
@@ -26,6 +30,40 @@
   }
 }
 
+.site-form__button {
+  display: flex;
+  flex-direction: column;
+}
+
 .site-form__require {
   line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .site-form__wrapper {
+    .container();
+  }
+
+  .site-form__extra {
+    display: flex;
+    flex-wrap: wrap;
+
+    .site-form__input {
+      width: 284px;
+    }
+  }
+
+  .site-form__button {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-form__profile {
+    display: flex;
+  }
+
+  .site-form__contacts {
+    display: flex;
+  }
 }
