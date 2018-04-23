@@ -6,12 +6,39 @@
   }
 }
 
+.catalog__wrapper {
+  .container();
+}
+
 .item-block {
+
+  outline: 2px solid purple;
 
   h2 {
     font-size: 16px;
     line-height: 20px;
     color: @title-color;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    h1 {
+      width: 100%;
+    }
+  }
+
+  .item-block {
+    width: 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .item-block {
+    width: 245px;
   }
 }
