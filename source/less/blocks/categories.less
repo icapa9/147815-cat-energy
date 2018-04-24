@@ -1,5 +1,15 @@
+.categories {
+  position: relative;
+  outline: 2px solid red;
+}
+
+.categories__wrapper {
+  .container();
+}
+
 .categories__item {
   background-color: @secondary-background-color;
+  outline: 2px solid blue;
 }
 
 .categories__title {
@@ -14,4 +24,25 @@
 
   color: @title-color;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .categories__description {
+    width: 350px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .categories__item {
+    width: 570px;
+
+    &:first-child {
+      margin-right: 80px;
+    }
+  }
 }
