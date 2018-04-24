@@ -7,7 +7,12 @@
   }
 }
 
+.catalog-extra__wrapper {
+  .container();
+}
+
 .catalog-extra__item {
+  outline: 2px solid purple;
 
   h2 {
     .secondary-title(16px);
@@ -22,5 +27,41 @@
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-extra__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-extra__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    >h2 {
+      width: 100%;
+    }
+  }
+
+  .catalog-extra__item {
+    width: 895px;
+
+    .button {
+      width: auto;
+    }
+  }
+
+  .catalog-extra__item.catalog-extra__item--gift {
+    width: 245px;
   }
 }

@@ -1,0 +1,17 @@
+.main-nav {
+  outline: 2px solid blue;
+}
+
+.main-nav__list {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav button {
+    display: none;
+  }
+}

@@ -1,6 +1,6 @@
 .main-title {
-  margin-bottom: 22px;
-  padding-top: 29px;
+  outline: 2px solid red;
+
   background-color: #63a73a;
   background-image:
     url("../img/index-background-mobile@1x.jpg");
@@ -16,4 +16,29 @@
     color: @main-title-color;
     text-transform: uppercase;
   }
+}
+
+.main-title__wrapper {
+  .container();
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .main-title {
+    background-color: inherit;
+    background-image: none;
+
+    h1 {
+      color: @title-color;
+    }
+
+    p {
+      color: @title-color;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }
