@@ -1,6 +1,5 @@
 .categories {
   position: relative;
-  outline: 2px solid red;
 }
 
 .categories__wrapper {
@@ -8,15 +7,50 @@
 }
 
 .categories__item {
+  padding: 20px;
+  padding-top: 30px;
   background-color: @secondary-background-color;
-  outline: 2px solid blue;
+  // outline: 2px solid blue;
 }
 
 .categories__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 12px;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   color: @title-color;
+  text-align: center;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 2px;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -9px;
+    width: 35px;
+    height: 49px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-position: center;
+  }
+}
+
+.categories__description {
+  margin: 0;
 }
 
 .categories__link {

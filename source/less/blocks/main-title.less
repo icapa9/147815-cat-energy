@@ -1,27 +1,40 @@
 .main-title {
-  outline: 2px solid red;
-
-  background-color: #63a73a;
-  background-image:
-    url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  margin-bottom: 22px;
+  outline: 1px solid green;
 
   h1 {
     .page-title(36px, 36px);
 
+    margin: 0;
+    margin-bottom: 23px;
+    padding-top: 27px;
+    font-weight: 400;
+    text-align: center;
     color: @main-title-color;
   }
 
   p {
+    margin: 0;
+    margin-bottom: 26px;
+    text-align: center;
     color: @main-title-color;
     text-transform: uppercase;
+  }
+
+  img {
+    margin-bottom: 3px;
   }
 }
 
 .main-title__wrapper {
   .container();
+
   display: flex;
   flex-direction: column;
+  background-image:
+    url("../img/index-background-mobile@1x.jpg");
+  background-size: 320px 305px;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
