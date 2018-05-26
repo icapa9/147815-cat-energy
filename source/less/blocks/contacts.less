@@ -7,10 +7,10 @@
     text-transform: uppercase;
     color: @title-color;
   }
+}
 
-  p {
-    line-height: 20px;
-  }
+.contacts__text {
+  line-height: 20px;
 }
 
 .contacts__wrapper {
@@ -22,19 +22,24 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    b {
+      width: 160px;
+      font-size: 20px;
+      line-height: 25px;
+      outline: 2px solid purple;
+    }
+  }
+
   .contacts__wrapper {
     display: flex;
     justify-content: space-between;
+  }
 
-    b {
-      width: 160px;
-      outline: 2px solid purple;
-    }
-
-    .contacts__text {
-      width: 160px;
-      outline: 2px solid purple;
-    }
+  .contacts__text {
+    width: 160px;
+    font-size: 16px;
+    outline: 2px solid purple;
   }
 }
 
