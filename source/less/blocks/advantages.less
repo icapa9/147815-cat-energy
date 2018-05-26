@@ -13,8 +13,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    h2 {
+      .page-title(60px, 60px);
+    }
+  }
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .adv-list__text {
+    .secondary-font();
   }
 }

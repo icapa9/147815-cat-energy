@@ -1,5 +1,4 @@
 .catalog-extra {
-
   h2 {
     .secondary-title(24px);
 
@@ -31,10 +30,20 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog-extra {
+    h2 {
+      .secondary-title(36px);
+    }
+  }
+
   .catalog-extra__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    h2 {
+      .secondary-title(20px);
+    }
 
     .button {
       width: 100%;
